@@ -1,0 +1,4 @@
+
+interface ListnerRegistration {
+     void remove() ;
+}

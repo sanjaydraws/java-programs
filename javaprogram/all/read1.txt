@@ -1,0 +1,39 @@
+DROP TABLE statement is used to drop an existing table in a database.
+
+TRUNCATE TABLE statement is used to delete the data inside a table, but not the table itself.
+
+
+ALTER TABLE statement is used to add, delete,
+ or modify columns in an existing table.
+
+
+
+constraints 
+-----------
+SQL constraints are used to specify rules for data in a table
+
+NOT NULL:Ensures that a column cannot have a NULL value
+UNIQUE: Ensures that all values in a column are different
+PRIMARY KEY: Primary keys must contain UNIQUE values, and cannot contain NULL values.
+A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).
+FOREIGN KEY: A FOREIGN KEY is a key used to link two tables together.
+A FOREIGN KEY is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
+
+CHECK:
+DEFAULT:
+INDEX:
+
+
+
+
+
+JOINS: used to combine rows from two or more tables, based on a related column between them.
+Inner JOIN 
+_------------
+
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+

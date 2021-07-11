@@ -1,0 +1,250 @@
+ 
+
+Access Modifiers :
+--------------------
+
+ access modifiers in Java is accessibility or scope of a field, method, constructor, or class
+
+
+
+Access Modifier 	within class	within package	outside package by subclass only	outside package
+Private	               Y	              N	            N	                              N
+Default                Y	              Y	            N	                              N
+Protected	           Y	              Y          	Y	                              N
+Public	               Y	              Y	            Y	                              Y      
+
+
+------------------------------------------------------------
+Instance initializer block :
+Instance Initializer block is used to initialize the instance data member. 
+It run each time when object of the class is created.
+
+initialization of the instance variable can be done directly but there can be 
+performed extra operations while initializing the instance variable in the instance initializer block.
+
+Rules for instance initializer block :
+There are mainly three rules for the instance initializer block. They are as follows:
+->The instance initializer block is created when instance of the class is created.
+->The instance initializer block is invoked after the parent class constructor is invoked (i.e. after super() constructor call).
+->The instance initializer block comes in the order in which they appear.
+
+
+final 
+------
+final keyword in java is used to restrict the user.
+
+
+final variable -> can't change value
+fianl method -> can't override 
+fianl class -> can't extend 
+
+final method is inherited but you cannot override it. 
+
+
+
+Method overiding 
+-----------------
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding.
+
+
+
+
+
+used for runtime polymorphism
+
+--------------------------------------
+Method Overloading
+If a class has multiple methods having same name but different in parameters, 
+
+
+when use ->  to perform only one operation, having same name of the methods increases the readability of the program.
+
+Different ways to overload the method
+There are two ways to overload the method in java
+
+By changing number of arguments
+By changing the data type
+--------------------------------------------------
+Inheritence :
+represents the IS-A relationship which is also known as a parent-child relationship.
+you can reuse methods and fields of the parent class
+
+
+why use :
+for method overiding
+for code reusebility 
+
+Multilevel Inheritance 
+When there is a chain of inheritance, it is known as multilevel inheritance.
+
+Animal <-- Dog <-- Baby dog 
+
+
+Hierarchical Inheritance
+When two or more classes inherits a single class,
+
+   
+Animal <---Dog 
+       <---Cat 
+
+
+Multiple Inheritence 
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes.
+ If A and B classes have the same method and you call it from child class object, there will be ambiguity 
+ to call the method of A or B class.
+
+Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes.
+ So whether you have same method or different, there will be compile time error.
+-----------------------------------------------------------------
+this keyword 
+this is a reference variable that refers to the current object.
+
+Usage of java this keyword
+
+->this can be used to refer current class instance variable.
+->this can be used to invoke current class method (implicitly)
+->this() can be used to invoke current class constructor.
+->this can be passed as an argument in the method call.
+->this can be passed as argument in the constructor call.
+->this can be used to return the current class instance from the method.
+
+
+
+------------------------------------------------------
+super Keyword in java: - 
+The super keyword in Java is a reference variable 
+which is used to refer immediate parent class object.
+
+
+Whenever you create the instance of subclass, 
+an instance of parent class is created implicitly 
+which is referred by super reference variable.
+
+
+Usage of Java super Keyword
+->super can be used to refer immediate parent class instance variable.
+->super can be used to invoke immediate parent class method.
+->super() can be used to invoke immediate parent class constructor.
+
+
+
+
+
+
+
+
+----------------------------------------------------------------
+Abstract class: 
+-----------------
+A class which is declared with the abstract keyword is known as an abstract class in Java.
+ It can have abstract and non-abstract methods (method with the body).
+
+why ->  used to declare Common properties (generalization)
+
+can't create object of Person class but can create refrence variable \
+
+            _______> Student 
+           |
+person -----
+           |_________> Faculty
+
+what abstract Method :->  no body , no implementation, end with semicolon
+
+if class has any abstract method whether declared or inherited ,
+the entire class must be declared abstract 
+
+
+
+why abstract method:- it is one of type force , have to implement this method
+
+Account class has calculate interest   --> saving Account  class- 
+
+
+
+
+
+deffference  abstract class b/w interface  
+
+
+Abstraction in Java
+-------------------
+process of hiding the implementation details and
+showing only functionality to the user.
+
+it shows only essential things to the user and hides the internal details, 
+for example, sending SMS where you type the text and send the message.
+You don't know the internal processing about the message delivery.
+
+
+Points to Remember
+->An abstract class must be declared with an abstract keyword.
+->It can have abstract and non-abstract methods.
+->It cannot be instantiated.
+->It can have constructors and static methods also.
+->It can have final methods which will force the subclass not to change the body of the method.
+
+
+
+
+
+
+
+------------------------------------------------------
+Interface:
+interface in Java is a blueprint of a class. 
+It has static constants and abstract methods.
+interface in Java is a mechanism to achieve abstraction.
+
+->represents the IS-A relationship.
+->cannot be instantiated just like the abstract class.
+
+-> Since Java 8, we can have default and static methods in an interface.
+->Since Java 9, we can have private methods in an interface.
+
+Why use Java interface?
+->It is used to achieve abstraction.
+->By interface, we can support the functionality of multiple inheritance.
+->It can be used to achieve loose coupling.
+
+
+------------------------
+-> all the fields are public, static and final by default.
+
+
+Multiple Inheritence :
+-----------------------
+If a class implements multiple interfaces, 
+or an interface extends multiple interfaces, 
+it is known as multiple inheritance.
+
+
+
+
+
+Exception Handling
+------------------
+to handle the runtime errors so that normal flow 
+of the application can be maintained.
+
+
+ an exception is an event that disrupts the normal flow of the program. 
+ It is an object which is thrown at runtime.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+Real DOM
+updates slow.
+DOM manipulation is very expensive.
+
+
+Virtual  DOM-> updates faster.
+Can’t directly update HTML
+Updates the JSX if element updates.
+DOM manipulation is very easy.
+No memory wastage.
+
+
+What is React?
+front-end JavaScript library developed by Facebook in 2011.
+ follows the component based approach which helps in building reusable UI components.
+used for developing complex and interactive web and mobile UI.
+
+
+
+ features of React? 
+
+uses the virtual DOM instead of the real DOM.
+It uses server-side rendering.
+It follows uni-directional data flow or data binding.
+
+
+
+JSX?
+JavaScript along with HTML like template syntax.
+This makes the HTML file really easy to understand. This file makes applications robust and boosts its performance. 
+
+
+ Why can’t browsers read JSX?
+Browsers can only read JavaScript objects but 
+JSX in not a regular JavaScript object. Thus to
+ enable a browser to read JSX, first, we need to
+  transform JSX file into a JavaScript object using
+   JSX transformers like Babel and then pass it to the browser.
+
+
+
+What is Props?
+ They are always passed down from the parent to the child components
+
+
+ a state in React
+
+
+

@@ -1,0 +1,115 @@
+create table  and insert into 
+===============
+
+CREATE TABLE Persons (
+    PersonID int,
+    Name varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+
+insert into Persons values(1, 'sanjay', 'green city', 'jodhpur');
+select * from Persons
+
+
+output 
+1|sanjay|green city|jodhpur
+
+
+Drop Table : 
+DROP TABLE table_name;
+
+
+ALTER TABLE:
+
+ALTER TABLE - ADD Column
+->ALTER TABLE   Persons  ADD COUNTRY  varchar(255);
+
+ALTER TABLE - DROP COLUMN
+->ALTER TABLE table_name DROP COLUMN column_name;
+
+ALTER TABLE - change datatype 
+
+ALTER TABLE table_name
+MODIFY column_name datatype;
+
+
+
+NOT NULL AND UNIQUE 
+------------------
+CREATE TABLE Persons (
+    ID int NOT NULL UNIQUE,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int
+);
+
+
+FOREIGN Key :
+-----------------
+create table Persons(
+  PersonID int NOT NULL,
+  lastname varchar(255) NOT NULL,
+  firstname varchar(255) NOT NULL,
+  age int,
+  primary key(PersonID)
+);
+
+
+insert into PERSONS values(1, 'kumar', 'akshay', 34);
+insert into PERSONS values(2, 'Bieber', 'Justin', 34);
+
+create table Orders(
+  OrderID int NOT NULL ,
+  OrderNumber int NOT NULL,
+  PersonID int,
+  CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)
+    REFERENCES Persons(PersonID)
+
+);
+
+select * from persons;
+insert into Orders values(1, 3332, 2);
+insert into Orders values(1, 3332, 1);
+
+select * from Orders;
+
+JOINS
+----------------------------
+create table Persons(
+  PersonID int NOT NULL,
+  lastname varchar(255) NOT NULL,
+  firstname varchar(255) NOT NULL,
+  age int,
+  primary key(PersonID)
+);
+
+
+insert into PERSONS values(1, 'kumar', 'akshay', 34);
+insert into PERSONS values(2, 'Bieber', 'Justin', 34);
+
+create table Orders(
+  OrderID int NOT NULL ,
+  OrderNumber int NOT NULL,
+  PersonID int,
+  CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)
+    REFERENCES Persons(PersonID)
+
+);
+
+select * from persons;
+insert into Orders values(1, 3332, 2);
+insert into Orders values(2, 2123, 1);
+insert into Orders values(3, 1332, 2);
+insert into Orders values(4, 2323, 3);
+insert into Orders values(5, 1032, 2);
+
+select * from Orders;
+
+
+-- select * from Persons INNER Join Orders on Persons.PersonID = Orders.PersonID
+-- select * from Persons Left join Orders  on Persons.personid = orders.personid
+-- select * from Persons Right join Orders  on Persons.personid = orders.personid
+select * from Persons Full outer join Orders  on Persons.personid = orders.personid
+
+

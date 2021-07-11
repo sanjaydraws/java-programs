@@ -1,0 +1,52 @@
+widget ->  Each element on a screen of the Flutter app is a widget.
+Ex:Assets, Images, and Icons: ,Animation and Motion, Material Components
+
+card ->  A card in Flutter is in rounded corner shape and has a shadow.used it to store the content and action of a single object
+list tile ->ListTile widget is used to populate a ListView in Flutter. It contains title as well as leading or trailing icons
+single childscrollview -> A box in which a single widget can be scrolled.
+
+SizedBox
+async and await 
+Expanded->Expanded widget in flutter comes in handy when we
+ want a child widget or children widgets to take all the 
+ available space along the main-axis 
+ (for Row the main axis is horizontal & vertical for Column).
+
+
+GridView builder-> large or infinite number of items (
+GestureDetector-  
+MaterialPageRoute
+
+context --->Context is a handle to the location of the widget in the widget tree. 
+It is a BuildContext instance that gets passed to the builder of a widget in 
+order to know where it is inside the widget tree.
+
+listview
+MaterialApp -MaterialApp is a predefined class in a flutter. It is likely the main or core component of flutter. We can access all the
+ other components and widgets provided by Flutter SDK.
+ Ex-idget, AppBar widget, Scaffold widget, ListView widget, StatelessWidget, StatefulWidget, IconButton widget, TextField widget,
+
+Stateless widgets are the widgets that don’t change i.e. they are immutable.
+Examples: Icon, IconButton, and Text are examples of stateless widgets. 
+To create a Stateless widget, we have to override the build() 
+
+
+Stateful Widget: 
+Stateful Widgets are the ones that change its properties during
+run-time. They are dynamic i.e., they are mutable and can be
+drawn multiple times within its lifetime. It can change its
+appearance in response to events triggered by user interactions or 
+when it receives data. 
+
+Ex: Checkbox, Radio Button, Slider, 
+
+
+-------------------------------------
+Asychronous programming:
+Future
+Async 
+Await 
+Then 
+
+
+

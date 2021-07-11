@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\callbacksJava"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\datetime"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\genericsJava"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\InterfaceExample"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\lambdas"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\localinnerclass"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\NestedAndInner"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\threadcourse"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\enumCourse"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\calendarpro"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\collectionjava"
+		},
+		{
+			"path": "..\\kotlinexamples\\kotlinExamples\\files"
+		}
+	],
+	"settings": {}
+}
