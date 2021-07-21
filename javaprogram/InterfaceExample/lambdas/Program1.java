@@ -51,3 +51,15 @@ interface BadFoo {
    // can't be functional interface ,doesn't have any methods 
 interface BlankFoo2 { }
 
+
+
+
+// Take note of the following. Suppose you have
+// interface Parent { public int parentMethod(); }
+// and
+// interface Child extends Parent { public int ChildMethod(); }
+// Then Child cannot be a functional interface since it has two specified methods.
+// Java 8 also provides a number of generic templated functional interfaces in the package java.util.function. For
+// example, the built-in interface Predicate<T> wraps a single method which inputs a value of type T and returns a
+// boolean.
+
