@@ -39,8 +39,5 @@ public class Example1 {
         // referenceid
         System.out.println(s1); // Singleton@5ca881b5
         System.out.println(s2);//Singleton@5ca881b5
-
-        
-        
     }   
 }
