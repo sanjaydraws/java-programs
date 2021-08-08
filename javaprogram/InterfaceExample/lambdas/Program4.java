@@ -28,8 +28,14 @@ public class Program4 {
         f.stream().map(fruit -> fruit.getName());
 
 
+        //Instance method reference (to a specific instance)
+        // System.out is instance of Printstream class is passes as an argumetn 
         f.forEach(System.out::println); // people.forEach(person -> System.out.println(person));
 
+
+        // static method reference 
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+        numbers.stream().map(String::valueOf);
 
 
 
