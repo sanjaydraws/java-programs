@@ -15,7 +15,14 @@ class B extends A{
     }
 }
 
-
+class C {
+    void funC1(){
+        System.out.println("func1 ");
+    }
+    void funC2(){
+        System.out.println("func2 ");
+    }
+}
 
 public class Program1
 {
@@ -33,5 +40,17 @@ public class Program1
             // }
         };
         obj.fun1(); // Anonymous Overidden method 
+
+
+        C obj2 = new C(){
+            void funC1(){
+                System.out.println("func1 ");
+            }
+            void funC2(){
+                System.out.println("func2 ");
+            }
+        };
+        obj2.funC1();//func1
+        obj2.funC2(); //func2
     }    
 }
